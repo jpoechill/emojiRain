@@ -12,7 +12,7 @@
       <!-- <div v-for="n in 10" :key="n" style="font-size: 48px; animation-name: right;" :style="classObject()">
         🌲
       </div> -->
-      <div v-for="n in 25" :key="n" style="font-size: 48px; animation-name: left;" :style="classObject()">
+      <div v-for="n in 25" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
         👋
       </div>
       <div v-for="n in 25" :key="n" style="font-size: 48px; animation-name: right;" :style="classObject()">
