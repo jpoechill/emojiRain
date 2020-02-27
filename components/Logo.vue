@@ -18,6 +18,9 @@
       <div v-for="n in 20" @click="sayHello" class="unselect" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
         #A
       </div>
+      <div v-for="n in 20" @click="sayHello" class="unselect" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
+        #hard
+      </div>
       <div v-for="n in 20" @click="sayHello" class="unselect" :key="n" style="animation-name: right;" :style="classObject()">
         <img src="/p_momz.png" style="width: 100%;" alt="">
       </div>
