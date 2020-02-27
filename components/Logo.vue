@@ -12,10 +12,13 @@
       <!-- <div v-for="n in 10" :key="n" style="font-size: 48px; animation-name: right;" :style="classObject()">
         🌲
       </div> -->
-      <div v-for="n in 25" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
+      <div v-for="n in 20" @click="sayHello" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
         👋
       </div>
-      <div v-for="n in 25" :key="n" style="font-size: 48px; animation-name: right;" :style="classObject()">
+      <div v-for="n in 20" @click="sayHello" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
+        #A
+      </div>
+      <div v-for="n in 20" @click="sayHello" :key="n" style="animation-name: right;" :style="classObject()">
         <img src="/p_momz.png" style="width: 100%;" alt="">
       </div>
     </div>
@@ -27,6 +30,10 @@ export default {
     return {}
   },
   methods: {
+    sayHello() {
+      var msg = new SpeechSynthesisUtterance('Hello');
+      window.speechSynthesis.speak(msg);
+    },
     classObject: function () {
       return {
         left: this.getRandomLeft(), 
@@ -49,22 +56,23 @@ export default {
 </script>
 
 <style>
-.container div {
+.container > div {
   width: 90px;
   top: -200px;
   position: absolute;
   animation-iteration-count: infinite;
 }
 
+.container > div:hover {
+  cursor: pointer;
+  transform: scale(2)
+}
+
 /* The animation code */
 @keyframes right {
-  0% {
-    transform: scale(1.25)
-  }
-
   100% {
     top: 800px;
-    transform: scale(1.25) translateX(40px) rotate(-180deg);
+    transform: translateX(40px) rotate(-180deg);
   }
 }
 
