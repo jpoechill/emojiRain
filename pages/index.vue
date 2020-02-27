@@ -20,8 +20,11 @@ export default {
   },
   methods: {
     sayHello() {
-      var msg = new SpeechSynthesisUtterance('Hello');
-      window.speechSynthesis.speak(msg);
+      var sound = new Audio({
+          src: 'pmomz-hello.m4a',
+          volume: 0.5,
+      });
+      sound.play();
     },
   },
 }

@@ -12,13 +12,13 @@
       <!-- <div v-for="n in 10" :key="n" style="font-size: 48px; animation-name: right;" :style="classObject()">
         🌲
       </div> -->
-      <div v-for="n in 20" @click="sayHello" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
+      <div v-for="n in 20" @click="sayHello" class="unselect" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
         👋
       </div>
-      <div v-for="n in 20" @click="sayHello" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
+      <div v-for="n in 20" @click="sayHello" class="unselect" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
         #A
       </div>
-      <div v-for="n in 20" @click="sayHello" :key="n" style="animation-name: right;" :style="classObject()">
+      <div v-for="n in 20" @click="sayHello" class="unselect" :key="n" style="animation-name: right;" :style="classObject()">
         <img src="/p_momz.png" style="width: 100%;" alt="">
       </div>
     </div>
@@ -31,8 +31,9 @@ export default {
   },
   methods: {
     sayHello() {
-      var msg = new SpeechSynthesisUtterance('Hello');
-      window.speechSynthesis.speak(msg);
+      var sound = new Audio('pmomz-hello.m4a');
+
+      sound.play();
     },
     classObject: function () {
       return {
@@ -66,6 +67,13 @@ export default {
 .container > div:hover {
   cursor: pointer;
   transform: scale(2)
+}
+
+.unselect {
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 /* The animation code */
