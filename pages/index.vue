@@ -2,7 +2,7 @@
     <div>
       <div class="myContainer">
         <Logo></Logo>
-        <button @click="sayHello">Say Hello..!</button>
+        <!-- <button @click="sayHello">Say Hello..!</button> -->
       </div>
     </div>
 </template>
