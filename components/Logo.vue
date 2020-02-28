@@ -90,7 +90,7 @@ export default {
 /* The animation code */
 @keyframes right {
   100% {
-    top: 800px;
+    top: 900px;
     transform: translateX(40px) rotate(-180deg);
   }
 }
@@ -101,21 +101,21 @@ export default {
   }
 
   100% {
-    top: 800px;
+    top: 900px;
     transform: scale(1.25) scaleX(-1) translateX(40px) rotate(-180deg);
   }
 }
 
 @keyframes left {
   100% {
-    top: 800px;
+    top: 900px;
     transform: translateX(-40px) rotate(180deg);
   }
 }
 
 @keyframes straight {
   100% {
-    top: 800px;
+    top: 900px;
     transform: translateX(-10px) rotate(45deg);
   }
 }
