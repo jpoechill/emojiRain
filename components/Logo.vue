@@ -24,6 +24,9 @@
       <div v-for="n in 20" @click="sayHello" class="unselect" :key="n" style="animation-name: right;" :style="classObject()">
         <img src="/p_momz.png" style="width: 100%;" alt="">
       </div>
+      <div v-for="n in 20" @click="playMeow" class="unselect" :key="n" style="animation-name: left;" :style="classObject()">
+        <img src="/olivia.png" style="width: 100%;" alt="">
+      </div>
     </div>
 </template>
 
@@ -35,6 +38,11 @@ export default {
   methods: {
     sayHello() {
       var sound = new Audio('pmomz-hello.m4a');
+
+      sound.play();
+    },
+    playMeow() {
+      var sound = new Audio('meow.mp3');
 
       sound.play();
     },
