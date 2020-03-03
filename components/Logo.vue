@@ -12,20 +12,29 @@
       <!-- <div v-for="n in 10" :key="n" style="font-size: 48px; animation-name: right;" :style="classObject()">
         🌲
       </div> -->
-      <div v-for="n in 20" @click="sayHello" class="unselect" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
+      <div v-for="n in 10" @click="sayHello" class="unselect" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
         👋
       </div>
-      <div v-for="n in 20" @click="sayHello" class="unselect" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
-        #A
+      <div v-for="n in 10" @click="sayHello" class="unselect" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
+        <img src="/liam.png" style="width: 100%;" alt="">
       </div>
-      <div v-for="n in 20" @click="sayHello" class="unselect" :key="n" style="font-size: 64px; animation-name: left;" :style="classObject()">
-        #hard
-      </div>
-      <div v-for="n in 20" @click="sayHello" class="unselect" :key="n" style="animation-name: right;" :style="classObject()">
+      <!-- <div v-for="n in 10" @click="sayHello" class="unselect" :key="n" style="font-size: 64px; animation-name: right;" :style="classObject()">
+        <img src="/olivia-02.png" style="width: 100%;" alt="">
+      </div> -->
+      <div v-for="n in 10" @click="sayHello" class="unselect" :key="n" style="animation-name: right;" :style="classObject()">
         <img src="/p_momz.png" style="width: 100%;" alt="">
       </div>
-      <div v-for="n in 20" @click="playMeow" class="unselect" :key="n" style="animation-name: left;" :style="classObject()">
+      <!-- <div v-for="n in 10" @click="playMeow" class="unselect" :key="n" style="animation-name: right;" :style="classObject()">
+        <img src="/google.png" style="width: 100%;" alt="">
+      </div> -->
+      <div v-for="n in 10" @click="playMeow" class="unselect" :key="n" style="animation-name: left;" :style="classObject()">
         <img src="/olivia.png" style="width: 100%;" alt="">
+      </div>
+      <!-- <div v-for="n in 10" @click="playMeow" class="unselect" :key="n" style="animation-name: left;" :style="classObject()">
+        <img src="/bednar.png" style="width: 100%;" alt="">
+      </div> -->
+      <div v-for="n in 10" @click="playMeow" class="unselect" :key="n" style="animation-name: left;" :style="classObject()">
+        <img src="/jesusy.png" style="width: 100%;" alt="">
       </div>
     </div>
 </template>
@@ -57,7 +66,7 @@ export default {
       return Math.floor(Math.random() * 1200) + 'px'; 
     },
     getRandomDelay() {
-      return Math.floor(Math.random() * 15) + 's'; 
+      return Math.floor(Math.random() * 20) + 's'; 
     },
     getRandomDuration() {
       return (Math.random() * 5) + 15 + 's'; 
