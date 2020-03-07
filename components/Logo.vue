@@ -19,23 +19,23 @@
         <img src="/liam.png" style="width: 100%;" alt="">
       </div>
       <!-- <div v-for="n in 10" @click="sayHello" class="unselect" :key="n" style="font-size: 64px; animation-name: right;" :style="classObject()">
-        <img src="/olivia-02.png" style="width: 100%;" alt="">
+        <img src="/skull.png" style="width: 100%;" alt="">
       </div> -->
       <div v-for="n in 10" @click="sayHello" class="unselect" :key="n" style="animation-name: right;" :style="classObject()">
         <img src="/p_momz.png" style="width: 100%;" alt="">
       </div>
-      <!-- <div v-for="n in 10" @click="playMeow" class="unselect" :key="n" style="animation-name: right;" :style="classObject()">
-        <img src="/google.png" style="width: 100%;" alt="">
-      </div> -->
-      <div v-for="n in 10" @click="playMeow" class="unselect" :key="n" style="animation-name: left;" :style="classObject()">
-        <img src="/olivia.png" style="width: 100%;" alt="">
+      <div v-for="n in 10" @click="playMeow" class="unselect" :key="n" style="animation-name: right;" :style="classObject()">
+        <img src="/skull.png" style="width: 75%;" alt="">
       </div>
+      <!-- <div v-for="n in 10" @click="playMeow" class="unselect" :key="n" style="animation-name: left;" :style="classObject()">
+        <img src="/olivia.png" style="width: 100%;" alt="">
+      </div> -->
       <!-- <div v-for="n in 10" @click="playMeow" class="unselect" :key="n" style="animation-name: left;" :style="classObject()">
         <img src="/bednar.png" style="width: 100%;" alt="">
       </div> -->
-      <div v-for="n in 10" @click="playMeow" class="unselect" :key="n" style="animation-name: left;" :style="classObject()">
+      <!-- <div v-for="n in 10" @click="playMeow" class="unselect" :key="n" style="animation-name: left;" :style="classObject()">
         <img src="/jesusy.png" style="width: 100%;" alt="">
-      </div>
+      </div> -->
     </div>
 </template>
 
@@ -79,14 +79,14 @@ export default {
 <style>
 .container > div {
   width: 90px;
-  top: -200px;
+  /* top: -200px; */
   position: absolute;
   animation-iteration-count: infinite;
 }
 
 .container > div:hover {
   cursor: pointer;
-  transform: scale(2)
+  /* transform: scale(2) */
 }
 
 .unselect {

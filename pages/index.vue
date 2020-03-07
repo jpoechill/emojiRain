@@ -1,7 +1,9 @@
 <template>
     <div>
       <div class="myContainer">
-        <Logo></Logo>
+        <!-- <Logo></Logo>
+         -->
+        <TicTacToe></TicTacToe>
         <!-- <button @click="sayHello">Say Hello..!</button> -->
       </div>
     </div>
@@ -9,10 +11,11 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import TicTacToe from '~/components/TicTacToe.vue'
 
 export default {
   components: {
-    Logo
+    TicTacToe
   },
   data() {
     return {
