@@ -7,7 +7,9 @@
       <img src="/jesus.png" @click="sayHello('/sounds/zebra.mp3')" alt="">
       <img src="/bednar.png" @click="sayHello('/sounds/deepbark.mp3')" alt="">
       <img src="/taylor.png" @click="sayHello('/sounds/meow.mp3')" alt="">
-      <img src="/skull-dark.png" @click="sayHello('/sounds/meow.mp3')" alt="">
+      <img src="/skull-dark.png" @click="sayHello('/sounds/jaguar.mp3')" alt="">
+      <img src="/ellen.png" @click="sayHello('/sounds/tiger.mp3')" alt="">
+      <img src="/ian.png" @click="sayHello('/sounds/zebra.mp3')" alt="">
     </div>
 </template>
 
